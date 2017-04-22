@@ -1,4 +1,7 @@
-# test coverage for  [grunt-sass (v2.0.0)](https://github.com/sindresorhus/grunt-sass#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-grunt-sass.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-grunt-sass) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-grunt-sass.svg)](https://travis-ci.org/npmtest/node-npmtest-grunt-sass)
+# npmtest-grunt-sass
+
+#### basic test-coverage for  grunt-sass (v2.0.0)  [![npm package](https://img.shields.io/npm/v/npmtest-grunt-sass.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-grunt-sass) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-grunt-sass.svg)](https://travis-ci.org/npmtest/node-npmtest-grunt-sass)
+
 #### Compile Sass to CSS using node-sass
 
 [![NPM](https://nodei.co/npm/grunt-sass.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/grunt-sass)
@@ -32,39 +35,24 @@
 ```json
 
 {
+    "name": "grunt-sass",
+    "version": "2.0.0",
+    "description": "Compile Sass to CSS using node-sass",
+    "license": "MIT",
+    "repository": "sindresorhus/grunt-sass",
     "author": {
         "name": "Sindre Sorhus",
         "url": "sindresorhus.com"
     },
-    "bugs": {
-        "url": "https://github.com/sindresorhus/grunt-sass/issues"
-    },
-    "dependencies": {
-        "each-async": "^1.0.0",
-        "node-sass": "^4.0.0",
-        "object-assign": "^4.0.1"
-    },
-    "description": "Compile Sass to CSS using node-sass",
-    "devDependencies": {
-        "grunt": "^1.0.1",
-        "grunt-cli": "^1.2.0",
-        "grunt-contrib-clean": "^1.0.0",
-        "grunt-contrib-nodeunit": "^1.0.0",
-        "xo": "*"
-    },
-    "directories": {},
-    "dist": {
-        "shasum": "9074cf9d7b4592e20f7788caa727b8f9aa06b60a",
-        "tarball": "https://registry.npmjs.org/grunt-sass/-/grunt-sass-2.0.0.tgz"
-    },
     "engines": {
         "node": ">=0.10.0"
+    },
+    "scripts": {
+        "test": "xo && grunt"
     },
     "files": [
         "tasks"
     ],
-    "gitHead": "c0486d99975e8a6672ce1dd8ffd7eff0b9fa3ac9",
-    "homepage": "https://github.com/sindresorhus/grunt-sass#readme",
     "keywords": [
         "gruntplugin",
         "css",
@@ -76,31 +64,22 @@
         "compile",
         "libsass"
     ],
-    "license": "MIT",
-    "maintainers": [
-        {
-            "name": "kevva"
-        },
-        {
-            "name": "sindresorhus"
-        },
-        {
-            "name": "xzyfer"
-        }
-    ],
-    "name": "grunt-sass",
-    "optionalDependencies": {},
+    "dependencies": {
+        "each-async": "^1.0.0",
+        "node-sass": "^4.0.0",
+        "object-assign": "^4.0.1"
+    },
+    "devDependencies": {
+        "grunt": "^1.0.1",
+        "grunt-cli": "^1.2.0",
+        "grunt-contrib-clean": "^1.0.0",
+        "grunt-contrib-nodeunit": "^1.0.0",
+        "xo": "*"
+    },
     "peerDependencies": {
         "grunt": ">=0.4.0"
     },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/sindresorhus/grunt-sass.git"
-    },
-    "scripts": {
-        "test": "xo && grunt"
-    },
-    "version": "2.0.0"
+    "bin": {}
 }
 ```
 
